@@ -487,7 +487,7 @@ textarea.form-control  {
 #home {
     /*position: relative;*/
     height: 100%;
-    min-height: 600px;
+    min-height: 900px;
     width: 100%;
     z-index: 1;
     background: url('../img/home.jpg') no-repeat center top / cover;
@@ -500,6 +500,7 @@ textarea.form-control  {
     left: 0;
     top: 0;
     z-index: 0;
+    min-height: 900px;
     width: 100%;
     height: 100%;
     opacity: .15;
