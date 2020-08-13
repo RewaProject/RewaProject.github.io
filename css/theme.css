@@ -522,7 +522,7 @@ textarea.form-control  {
     display: block;
     width: 170px;
     height: 30px;
-    background: url('../img/logo-dark.png') no-repeat;
+    background: url('../img/logo-white.png') no-repeat;
 }
 
 .affix .logo-image {
@@ -538,7 +538,7 @@ textarea.form-control  {
 }
 
 #navbar a {
-    color: #333;
+    color: #fff;
 }
 
 #navbar a:hover,
@@ -579,46 +579,6 @@ textarea.form-control  {
 
 
 
-/*--------------------------------------------------------------------------------------------------------------------
- * SECTION: Testimonials
- *--------------------------------------------------------------------------------------------------------------------*/
-/*
-.testimonial {
-}
-
-.testimonial-text {
-}
-
-.testimonial-author {
-    font-weight: 400;
-}
-
-.testimonial-author span {
-    font-weight: 500;
-}
-
-.testimonial-quote-icon {
-    padding-top: 20px;
-}
-
-.testimonial-picture {
-
-    overflow: hidden;
-
-    width: 100px;
-    height: 100px;
-
-    margin: 0 auto;
-
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-}
-
-.testimonial-picture img {
-    max-width: 100%;
-}
-*/
 /*--------------------------------------------------------------------------------------------------------------------
  * SECTION: About
  *--------------------------------------------------------------------------------------------------------------------*/
