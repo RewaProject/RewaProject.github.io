@@ -45,71 +45,221 @@
     <div class="home-container container vertical-top">
         <div class="row">
             <div class="col-md-6 txt-white">
-                <h3>Reduza seus gastos com energia elétrica!</h3>
-                     Sabia que é possível reduzir sua conta de energia com INVESTIMENTO ZERO?
-                     <br>Envie os dados abaixo que iremos ajudá-lo!
+                <h2>Reduza seus gastos com a conta de luz!</h2>
+                     <h4>Sabia que é possível reduzir sua conta de energia em até 30%?
+                     Preencha os dados abaixo para fazer uma simulação:</h4>
                 <p>
                 <!-- Form -->
                 <div class="row">
-                <form method="post" class="form-ajax">
-                    <input type="hidden" name="form" value="Home form">
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <input type="text" name="name" class="form-control" placeholder="Nome*" required>
+                    <form method="post" class="form-ajax">
+                        <input type="hidden" name="form" value="Home form">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Nome*" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Email empresarial*" required>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email empresarial*" required>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="phone" class="form-control form-control-sm" placeholder="Telefone*" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" name="media" class="form-control form-control-sm" placeholder="Média de consumo mensal (kWH)*" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <input type="text" name="phone" class="form-control" placeholder="Telefone*" required>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="SelectAtividade">Ramo de Atividade</label>
+                                <select class="form-control"  id="SelectAtividade">
+                                    <option value="Comércio">Comércio</option>
+                                    <option>Clínica</option>
+                                    <option>Restaurante</option>
+                                    <option>Residência</option>
+                                    <option>Outro</option>
+                                  </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="selectUF">Estado</label>
+                                <select class="form-control form-control-lg" id="selectUF">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                  </select>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" name="phone" class="form-control" placeholder="Horário de funcionamento" required>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraAbre">Horário de Abertura (seg à sex) </label>
+                                <select class="form-control form-control-lg" id="selectHoraAbre">
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">07:00</option>
+                                    <option value="0830">08:00</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
 
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                        <p> Ramo de Atividade:</p>
-                          <div class="radio">
-                            <label><input type="radio" name="optradio1" checked>Comercial</label>
-                          </div>
-                          <div class="radio">
-                            <label><input type="radio" name="optradio1">Prestação de serviços</label>
-                          </div>
-                          <div class="radio">
-                            <label><input type="radio" name="optradio1">Outro</label>
-                          </div>
+                                  </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraFecha">Horário de Fechamento (seg à sex): </label>
+                                <select class="form-control form-control-lg" id="selectHoraFecha">
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">21:30</option>
+                                    <option value="2200">23:00</option>
+                                    <option value="2230">23:30</option>                                  
+                                  </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraAbreSab">Horário de Abertura (Sábado):</label>
+                                <select class="form-control form-control-lg" id="selectHoraAbreSab">
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">07:00</option>
+                                    <option value="0830">08:00</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+
+                                  </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraFechaSab">Horário de Fechamento (Sábado):</label>
+                                <select class="form-control form-control-lg" id="selectHoraFechaSab">
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">21:30</option>
+                                    <option value="2200">23:00</option>
+                                    <option value="2230">23:30</option>                                  
+                                  </select>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                          <p> Gasto mensal com energia elétrica:</p>
-                          <div class="radio">
-                              <label><input type="radio" name="optradio2" checked>Até R$ 1.000,00</label>
-                            </div>
-                            <div class="radio">
-                              <label><input type="radio" name="optradio2">Entre R$ 1.000,00 e R$ 2.500,00</label>
-                            </div>
-                            <div class="radio disabled">
-                              <label><input type="radio" name="optradio2">Acima de R$ 2.500,00</label>
+                        <div class="row">
+                            <div class="form-group col-md-12 text-center">
+                                <button type="submit" class="btn btn-block btn-big btn-red">Enviar</button>
                             </div>
                         </div>
                        
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-6 text-center">
-                            <button type="submit" class="btn btn-block btn-big btn-red">Enviar</button>
-                        </div>
-                    </div>
-                </div>  
-                </form><!-- /Form -->
-            </p>
+                    </form><!-- /Form -->
             </div>
         </div>
     </div>
     <!-- /Home container -->
-
 </header>
 <!-- /HEADER -->
 

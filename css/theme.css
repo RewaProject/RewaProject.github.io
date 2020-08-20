@@ -339,8 +339,9 @@ blockquote {
     font-family: inherit !important;
     font-weight: 500;
 
-    border: solid 1px #fff;
-
+    border: solid 1px white;
+    color: black;
+    
     -webkit-border-radius: 2px;
        -moz-border-radius: 2px;
             border-radius: 2px;
@@ -352,7 +353,7 @@ blockquote {
 
 input[type=text].form-control,
 input[type=email].form-control {
-    height: 50px;
+    height: 40px;
 }
 
 textarea.form-control  {
@@ -388,7 +389,7 @@ textarea.form-control  {
  *-----------------------*/
 
 .txt-white {
-    color: #fff;
+    color: white;
 }
 
 .txt-big {
