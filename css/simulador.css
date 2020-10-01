@@ -1,0 +1,522 @@
+.simulation {
+    background-color: white;
+    border-radius: 7px 7px 7px 7px;
+    display: flex;
+    padding: 35px 45px;
+}
+.simulation h1 {
+    font-size: 36px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+.simulation p {
+    font-size: 16px;
+}
+.col-simu-input {
+    width: 35%;
+    border-right: 1px solid #151515;
+    padding-right: 35px;
+}
+.sub-title-sim {
+    font-size: 12px;
+    color: black;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    letter-spacing: 5.5px;
+}
+.col-simu-resul {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: space-around;
+}
+.p-resu {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+.input-select * {
+    cursor: pointer;
+    padding: 40px;
+    border-radius: 9px;
+}
+.input-select option {
+  padding: 40px;
+}
+.option {
+  padding: 40px;
+}
+.input-select {
+  background-color: white;
+  border-radius: 7px;
+  color: black;
+  
+  padding: 13px 15px;
+  font-size: 14px;
+  min-width: 100%;
+  width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+.econo {
+    font-size: 63px;
+    text-align: center;
+    margin: 40px 0px;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.others-results {
+    display: flex;
+    justify-content: center;
+}
+.content-results {
+    max-width: 400px;
+    display: flex;
+    margin: 0 25px;
+} 
+.tit-nat {
+    color: black;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0 auto;
+}
+.range-input {
+    display: flex;
+    align-items: center;
+}
+.range-input p {
+    margin: 0px 15px;
+    color: black;
+}
+.range-input h4 {
+    color: black;
+}
+.range-input h3 {
+    color: black;
+    font-size: 28px;
+    margin: 0 auto;
+}
+.co-tre {
+    display: flex;
+    max-width: 100px;
+    margin-top: 4px;
+    margin: 0 auto;
+}
+
+.contato {
+    display: none;
+    background-color: #ECECEC;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 30px 45px;
+    margin-top: -5px;
+}
+.input-area {
+    display:flex;
+    justify-content: space-between;
+}
+.box-input {
+    display: flex;
+    flex-direction: column;
+    background-color:none;
+    min-width: 310px;
+    max-width: 380px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555555;
+}
+.input {
+    width: 300px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.img-sus {
+  margin-right: 20px;
+}
+.img-sus {
+    height: 60px;
+    margin-top: 20px;
+}
+@supports (-ms-ime-align:auto) {
+  .img-sus { 
+    height: 60px;
+    margin-top: 20px;
+  } 
+}
+.mensal-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.mensal-content {
+    display: flex;
+    justify-content: center;
+}
+.mensal-content p {
+    margin: 0;
+}
+.mensal-tit-content {
+    display: flex;
+}
+.tit-mensal {
+    padding-right: 10px;
+}
+.anual-container {
+    display: flex;
+    justify-content: center;
+}
+.light-year {
+    font-weight: 100;
+}
+.simulation-bg {
+    background-image: url(../images/home_simulador_X.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+}
+.box-input input[type=text] {
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #878787;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    outline-color: #71F697;
+}
+.box-input input[type=email] {
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #878787;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    outline-color: #71F697;
+}
+.box-input input[type=tel] {
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #878787;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    outline-color: white;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -30px; /* Add cool effects to your sliders! */
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    height: 36px;
+    width: 16px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: black;
+    border-radius: 50px;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: black;
+    border-radius: 50px;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: black;
+    border-radius: 50px;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: black;
+    border-radius: 50px;
+  } 
+  input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+    height: 3px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: black;
+    border-radius: .60rem !important;
+    appearance: none !important;
+  }
+  .slider {
+    border-radius: .60rem !important;
+    appearance: none !important;
+  }
+  /*Circle - Chrome*/
+  input[type=range]::-webkit-slider-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 30px;
+    background: red;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; 
+  }
+  /*Circle hover - Chrome*/
+  input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  /*Circle focus - Chrome*/
+  input[type=range]::-webkit-slider-thumb:active {
+    background: red;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    margin-top: -5px;
+    border-radius: 30px;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 30px;
+    background: #71F697;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: black;
+    border-radius: 50px;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: black;
+    border-radius: 50px;
+  }
+  .error {
+    display: none;
+  }
+  .disabled {
+    background: rgb(210, 210, 210);
+    color: #949494;
+    cursor: auto;
+  }
+  .disabled:hover {
+    transform: scale(1);
+  }
+  .error {
+    display: inline;
+    color: #f14a4a;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+
+@media only screen and (max-width: 576px) {
+  
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+    line-height: 47px;
+  }
+  .range-input p {
+    margin: 0px 8px;
+  }
+  .col-simu-input {
+    min-width: 100% !important;
+  }
+  .input-select {
+    width: 100%;
+  }
+  .others-results {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-results {
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .p-resu {
+    margin-bottom: 0;
+  }
+  .mensal-container {
+      margin-top: 10px;
+  }
+  .box-input {
+      min-width: 100% !important;
+      max-width: 100% !important;
+  }
+  .input-area {
+      flex-direction: column;
+  }
+  /*Circle - Chrome*/
+  input[type=range]::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border-radius: 30px;
+    margin-top: -15px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .tit-mensal {
+    font-size: 12px !important;
+  }
+  .simulation {
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    margin-top: 70px;
+  }
+  .co-tre {
+    max-width: 160px;
+  }
+  .econo {
+    font-size: 43px;
+  }
+  .col-simu-input {
+    min-width: 445px;
+    border-right: none;
+    border-bottom: 1px solid #1d1d1d;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .col-simu-resul {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  .mensal-container {
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .box-input {
+    min-width: 260px;
+    max-width: 150px;
+  }
+}
+
+
