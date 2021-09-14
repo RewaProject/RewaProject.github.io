@@ -1,959 +1,609 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <!-- Page title -->
-    <title>Rewa Energy</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png">
-   
-    <!-- Style -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/simulador.css"/>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="js/notify.min.js"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Kora Webpage Title</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
-<body>
-<!-- HEADER -->
-<header id="home" data-stellar-background-ratio="0.5">
+<body data-spy="scroll" data-target=".fixed-top">
+    
     <!-- Navigation -->
-    <nav id="navigation" class="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container">
-            <div class="logo">
-                <a href="#" class="logo-image"></a>
-            </div>
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#navbar"
-                    aria-expanded="false"
-                    aria-controls="navbar">
+            
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Kora</a> -->
 
-                <i class="fa fa-list"></i>
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre a REWA</a></li>
-                    <!--<li><a href="#features">Soluções</a></li> -->
-                    <li><a href="#contact">Contato</a></li>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#intro">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">Details</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navigation -->
-    <!-- Home container -->
-    <div class="home-container container vertical-top">
+                <span class="nav-item">
+                    <a class="btn-solid-sm page-scroll" href="sign-up.html">Start selling</a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h1 class="h1-large">Now is the time to start selling things online </h1>
+                        <p class="p-large">Kora is a leading online shop creation platform which offers amazing features for ecommerce</p>
+                        <a class="btn-solid-lg" href="sign-up.html">Sign up for free</a>
+                        <a class="btn-outline-lg page-scroll" href="#intro">Discover</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/header.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Brands and shops that use <span>Kora</span> to grow their business</h4>
+                    <hr class="section-divider">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/customer-logo-6.png" alt="alternative">
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+
+    <!-- Introduction -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="img-fluid" src="images/introduction.jpg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h2>Kora is here to help you grow your online shop</h2>
+                        <p>We believe in sustainable and trustful ecommerce which offers opportunities for both shop owners and customers. Our entire experience and passion can be found in Kora and you are invited to use it for your business</p>
+                        <a class="btn-solid-reg" href="sign-up.html">Sign up</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of introduction -->
+
+
+    <!-- Features -->
+    <div id="features" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Check out all the features</h2>
+                    <p class="p-heading">The features built into Kora were designed to help online shop owners present their merchandise and find more customers</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <div class="card-icon">
+                                <span class="fas fa-headphones-alt green"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Product Marketing On Social Platforms</h4>
+                            <p>Besides regular product display options Kora has multiple functions for social networks integration</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <div class="card-icon">
+                                <span class="far fa-clipboard blue"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Branding And Strategy Basic Guidelines</h4>
+                            <p>To build a solid foundation for your online shop you need a strong brand and a bulletproof strategy</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <div class="card-icon">
+                                <span class="far fa-comments purple"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Design & Development Advanced Services</h4>
+                            <p>Our team of competent designers and developers are able to create great designs and structured code</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of features -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="intro">
+                        <h2>Start a successful ecommmerce business in no more than 3 easy steps with Kora</h2>
+                        <p>To build a solid foundation for your online shop you need a strong brand and a bulletproof strategy. You can rely on our experience to create a beautiful and efficient online shop that offers benefits for both the shop brand and loyal customers</p>
+                    </div> <!-- end of intro -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">Step 1</div>
+                        <h2>Figure out what to sell</h2>
+                        <p>Delivering powerful brands for popular shops while creating beautiful concepts and evocative logos. Use the opportunity to prepare complete style guides</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details Lightbox -->
+    <!-- Lightbox -->
+	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
-            <div class="col-md-6 txt-white">
-                <br><br>
-                
-                    <h1>Tenha mais tempo e energia pra focar no seu negócio!</h1>
-                    <h1>Deixe que da sua conta de energia a gente cuida.</h1>
-                    <!--
-                <h1>REDUZA</h1><h2><p>&nbsp&nbsp  sua conta de energia elétrica!<br></h2>
-                     Sabia que é possível reduzir sua conta de luz em até 30%? <br>
-                     Podemos ajudar seu negócio a economizar com energia. <br>
-                     Envie os dados abaixo que faremos uma avaliação gratuita!
-                    -->
-                <p>
-                <!-- Form -->
-                <!--
-                <div class="row">
-                    <form method="post" class="form-ajax">
-                        <input type="hidden" name="form" value="Home form">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Nome*" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="Seu e-mail empresarial:*" required>
-                            </div>
-                        </div>  
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div> <!-- end of col -->
+			<div class="col-lg-4">
+                <h3>Goals Setting</h3>
+				<hr>
+                <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i><div class="media-body">Splash screen panel</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i><div class="media-body">Statistics graph report</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i><div class="media-body">Events calendar layout</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i><div class="media-body">Location details screen</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i><div class="media-body">Onboarding steps interface</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="sign-up.html">Sign Up</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+			</div> <!-- end of col -->
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightbox -->
 
-                        <!--
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="SelectAtividade">Ramo de Atividade</label>
-                                <select class="form-control"  id="SelectAtividade">
-                                    <option value="Comércio">Comércio</option>
-                                    <option>Clínica</option>
-                                    <option>Restaurante</option>
-                                    <option>Residência</option>
-                                    <option>Outro</option>
-                                  </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="selectUF">Estado</label>
-                                <select class="form-control form-control-lg" id="selectUF">
-                                    <option value="AC">Acre</option>
-                                    <option value="AL">Alagoas</option>
-                                    <option value="AP">Amapá</option>
-                                    <option value="AM">Amazonas</option>
-                                    <option value="BA">Bahia</option>
-                                    <option value="CE">Ceará</option>
-                                    <option value="DF">Distrito Federal</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    <option value="GO">Goiás</option>
-                                    <option value="MA">Maranhão</option>
-                                    <option value="MT">Mato Grosso</option>
-                                    <option value="MS">Mato Grosso do Sul</option>
-                                    <option value="MG">Minas Gerais</option>
-                                    <option value="PA">Pará</option>
-                                    <option value="PB">Paraíba</option>
-                                    <option value="PR">Paraná</option>
-                                    <option value="PE">Pernambuco</option>
-                                    <option value="PI">Piauí</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="RN">Rio Grande do Norte</option>
-                                    <option value="RS">Rio Grande do Sul</option>
-                                    <option value="RO">Rondônia</option>
-                                    <option value="RR">Roraima</option>
-                                    <option value="SC">Santa Catarina</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="SE">Sergipe</option>
-                                    <option value="TO">Tocantins</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="selectHoraAbre">Horário de Abertura (seg à sex) </label>
-                                <select class="form-control form-control-lg" id="selectHoraAbre">
-                                    <option value="0600">06:00</option>
-                                    <option value="0630">06:30</option>
-                                    <option value="0700">07:00</option>
-                                    <option value="0730">07:30</option>
-                                    <option value="0800">07:00</option>
-                                    <option value="0830">08:00</option>
-                                    <option value="0900">09:00</option>
-                                    <option value="0930">09:30</option>
-                                    <option value="1000">10:00</option>
-                                    <option value="1030">10:30</option>
-                                    <option value="1100">11:00</option>
-                                    <option value="1130">11:30</option>
-                                    <option value="1200">12:00</option>
-                                    <option value="1230">12:30</option>
-                                    <option value="1300">13:00</option>
-                                    <option value="1330">13:30</option>
-                                    <option value="1400">14:00</option>
-                                    <option value="1430">14:30</option>
-                                    <option value="1500">15:00</option>
-                                    <option value="1530">15:30</option>
-                                    <option value="1600">16:00</option>
-                                    <option value="1630">16:30</option>
-                                    <option value="1700">17:00</option>
-                                    <option value="1730">17:30</option>
-                                    <option value="1800">18:00</option>
 
-                                  </select>
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                <label for="selectHoraFecha">Horário de Fechamento (seg à sex): </label>
-                                <select class="form-control form-control-lg" id="selectHoraFecha">
-                                    <option value="0900">09:00</option>
-                                    <option value="0930">09:30</option>
-                                    <option value="1000">10:00</option>
-                                    <option value="1030">10:30</option>
-                                    <option value="1100">11:00</option>
-                                    <option value="1130">11:30</option>
-                                    <option value="1200">12:00</option>
-                                    <option value="1230">12:30</option>
-                                    <option value="1300">13:00</option>
-                                    <option value="1330">13:30</option>
-                                    <option value="1400">14:00</option>
-                                    <option value="1430">14:30</option>
-                                    <option value="1500">15:00</option>
-                                    <option value="1530">15:30</option>
-                                    <option value="1600">16:00</option>
-                                    <option value="1630">16:30</option>
-                                    <option value="1700">17:00</option>
-                                    <option value="1730">17:30</option>
-                                    <option value="1800">18:00</option>
-                                    <option value="1830">18:30</option>
-                                    <option value="1900">19:00</option>
-                                    <option value="1930">19:30</option>
-                                    <option value="2000">20:00</option>
-                                    <option value="2030">20:30</option>
-                                    <option value="2100">21:00</option>
-                                    <option value="2130">21:30</option>
-                                    <option value="2200">22:00</option>
-                                    <option value="2230">21:30</option>
-                                    <option value="2200">23:00</option>
-                                    <option value="2230">23:30</option>                                  
-                                  </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="selectHoraAbreSab">Horário de Abertura (Sábado):</label>
-                                <select class="form-control form-control-lg" id="selectHoraAbreSab">
-                                    <option value="0600">06:00</option>
-                                    <option value="0630">06:30</option>
-                                    <option value="0700">07:00</option>
-                                    <option value="0730">07:30</option>
-                                    <option value="0800">07:00</option>
-                                    <option value="0830">08:00</option>
-                                    <option value="0900">09:00</option>
-                                    <option value="0930">09:30</option>
-                                    <option value="1000">10:00</option>
-                                    <option value="1030">10:30</option>
-                                    <option value="1100">11:00</option>
-                                    <option value="1130">11:30</option>
-                                    <option value="1200">12:00</option>
-                                    <option value="1230">12:30</option>
-                                    <option value="1300">13:00</option>
-                                    <option value="1330">13:30</option>
-                                    <option value="1400">14:00</option>
-                                    <option value="1430">14:30</option>
-                                    <option value="1500">15:00</option>
-                                    <option value="1530">15:30</option>
-                                    <option value="1600">16:00</option>
-                                    <option value="1630">16:30</option>
-                                    <option value="1700">17:00</option>
-                                    <option value="1730">17:30</option>
-                                    <option value="1800">18:00</option>
-
-                                  </select>
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                <label for="selectHoraFechaSab">Horário de Fechamento (Sábado):</label>
-                                <select class="form-control form-control-lg" id="selectHoraFechaSab">
-                                    <option value="0900">09:00</option>
-                                    <option value="0930">09:30</option>
-                                    <option value="1000">10:00</option>
-                                    <option value="1030">10:30</option>
-                                    <option value="1100">11:00</option>
-                                    <option value="1130">11:30</option>
-                                    <option value="1200">12:00</option>
-                                    <option value="1230">12:30</option>
-                                    <option value="1300">13:00</option>
-                                    <option value="1330">13:30</option>
-                                    <option value="1400">14:00</option>
-                                    <option value="1430">14:30</option>
-                                    <option value="1500">15:00</option>
-                                    <option value="1530">15:30</option>
-                                    <option value="1600">16:00</option>
-                                    <option value="1630">16:30</option>
-                                    <option value="1700">17:00</option>
-                                    <option value="1730">17:30</option>
-                                    <option value="1800">18:00</option>
-                                    <option value="1830">18:30</option>
-                                    <option value="1900">19:00</option>
-                                    <option value="1930">19:30</option>
-                                    <option value="2000">20:00</option>
-                                    <option value="2030">20:30</option>
-                                    <option value="2100">21:00</option>
-                                    <option value="2130">21:30</option>
-                                    <option value="2200">22:00</option>
-                                    <option value="2230">21:30</option>
-                                    <option value="2200">23:00</option>
-                                    <option value="2230">23:30</option>                                  
-                                  </select>
-                            </div>
-                        </div>
-                        -->
-                        <!--
-                        <div class="row">
-                            <div class="form-group col-md-6 text-center">
-                                <button type="submit" class="btn btn-block btn-big btn-red">Quero Economizar!</button>
-                            </div>
-                        </div>
-                        -->
-                       
-                    </form><!-- /Form -->
-            </div>
-        </div>
-    </div>
-    <!-- /Home container -->
-</header>
-<!-- /HEADER -->
-
-<!-- MAIN -->
-<main class="main-container">
-    <section>
-        <div class="simulation">
-            <div class="col-simu-input">
-                <h4 class="sub-title-sim">SIMULADOR REWA</h4>
-                <h4>SIMULE SUA ECONOMIA COM A TARIFA BRANCA</h4>
-                <p>Insira algumas informações sobre o consumo de energia da sua empresa.</p>
-                <form>
-                    <select class="input-select" name="carlist" form="carform" id="input-select">
-                        <option class="option" value="" disabled selected>Selecione a sua distribuidora</option>
-                        <option class="option" value="EPB">PB - ENERGISA</option>
-                    </select>
-                    <div class="range-input">
-                        <h4>Valor médio da sua fatura por mês</h4>
-                        <p>R$</p>
-                        <h3 id="valor">1.000,00</h3>
-                    </div>
-                    <input type="range" min="2000" max="20000" step="500" value="2000" class="slider" id="Range">
-                    <input type="hidden" id="msg" value="">
-                    <input type="hidden" id="nome" value="">
-                </form>
-            </div>
-            <div class="col-simu-resul">
-                <p class="p-resu">Sua economia anual será de</p>
-                <div class="mensal-container">
-                    <div class="anual-container">
-                        <h3 class="econo light-year">R$</h3>
-                        <h3 id="val-econo" class="econo"><b>4.320,00</b></h3>
-                    </div>
-                    <div class="mensal-content">
-                        <p class="tit-mensal">POR MÊS ISSO REPRESENTA </p>
-                        <div class="mensal-tit-content">
-                            <p><b>R$</b></p>
-                            <p><b id="econo-mensal">360.00</b></p>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="others-results">
-                    <div class="content-results">
-                        <img class="img-sus" src="images/icon/home_simulador_co2.svg" alt="" title="">
-                        <div class="item-sus">
-                            <h3 id="co2" class="tit-nat">0.28</h3>
-                            <p class="co-tre">ton de CO2 poupados por mês</p>
-                        </div>
-                    </div>
-                    <div class="content-results">
-                        <img class="img-sus" src="images/icon/home_simulador_arvore.svg" alt="" title="">
-                        <div class="item-sus">
-                            <h3 id="arvores" class="tit-nat">1</h3>
-                            <p class="co-tre">Árvores compensadas por mês</p>
-                        </div>
-                    </div>
-                </div>
-            -->
-            </div>
-        </div>
-        <div class="contato">        
-            <form action="sendForm.php" method="POST">
-                <div class="input-area">
-                    <div class="box-input">
-                        <label>Nome do Responsável</label>
-                        <input type="text" placeholder="João da Costa Silva" name="name" id="name" maxlength="255">
-                        <span id="error-name" class="error"></span>
-                    </div>
-                    <div class="box-input">
-                        <label>E-mail</label>
-                        <input type="email" placeholder="joao@exemple.com" name="email" id="email" maxlength="255">
-                        <span id="error-email" class="error"></span>
-                    </div>
-                    <div class="box-input">
-                        <label>Telefone</label>
-                        <input type="tel" placeholder="(99) 99999-9999" name="tel" id="tel" maxlength="18">
-                        <span id="error-tel" class="error"></span>
-                    </div>
-                    <input type="hidden" name="val-medio" id="val-medio">
-                    <input type="hidden" name="econ-mensal" id="econ-mensal">
-                    <input type="hidden" name="econ-anual" id="econ-anual">
-                    <input type="hidden" name="con-selected" id="con-selected">
-                </div>
-                <div class="container container-button">
-                    <button type="submit" disabled class="btn disabled">QUERO ECONOMIZAR</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    
-
-    <!-- SECTION: Clients or Partners -->
-        <!--
-    <section id="clients" class="bg-grey pv">
+    <!-- Details 2 -->
+    <div class="basic-3">
         <div class="container">
             <div class="row">
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="item">
-                        <img src="img/partner.png">
-                    </div>
-                    <div class="item">
-                        <img src="img/partner.png">
-                    </div>
-                    <div class="item">
-                        <img src="img/partner.png">
-                    </div>
-                    <div class="item">
-                        <img src="img/partner.png">
-                    </div>
-                    <div class="item">
-                        <img src="img/partner.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- /SECTION: Clients or Partners -->
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">Step 2</div>
+                        <h2>Analyze the marketplace</h2>
+                        <p>Our team of competent designers and developers are able to create beautiful designs and structured code that will serve your ecommerce project on the long term</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Delivering powerful brands for popular shops</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Creating beautiful concepts and evocative logos</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Preparing complete branding guides and styles</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-2.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
 
-    <!-- SECTION: Testimonials -->
-        <!--
-    <section id="testimonials" class="section">
+
+    <!-- Details 3 -->
+    <div class="basic-4">
         <div class="container">
-        -->
-            <!-- Section header -->
-            <!--
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <header>
-                        <h2 class="section-title">What others are saying</h2>
-                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
-                    </header>
-                </div>
-            </div>
-            --><!-- /Section header -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-3.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">Step 3</div>
+                        <h2>Create your shop account</h2>
+                        <p>We can deliver a comprehensive marketing plan and then execute it down to the smallest details. To start using Kora just sign up and submit your details</p>
+                        <a class="btn-solid-reg" href="sign-up.html">Sign up now</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of details 3 -->
 
-            <!-- Section content -->
-            <!-- Testimonial -->
-            <!--            <div class="row testimonial section-content">
 
-                <div class="col-md-3 text-center text-muted testimonial-quote-icon">
-                    <i class="fa fa-quote-left fa-3x"></i>
-                </div>
-
-                <div class="col-md-6 text-center">
-                    <p class="testimonial-text">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable.
-                    </p>
-                    <p class="testimonial-author text-muted">
-                        <span>John Doe</span>, Company Name
-                    </p>
-                </div>
-
-                <div class="col-md-3 text-center">
-                    <div class="testimonial-picture">
-                        <img src="images/testimonials-author-1.jpg">
-                    </div>
-                </div>
-            </div>-->
-<!-- /Testimonial -->
-
-            <!-- Testimonial -->
-            <!--
-            <div class="row testimonial mt">
-
-                <div class="col-md-3 text-center">
-                    <div class="testimonial-picture">
-                        <img src="images/testimonials-author-2.jpg">
-                    </div>
-                </div>
-
-                <div class="col-md-6 text-center">
-                    <p class="testimonial-text">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable.
-                    </p>
-                    <p class="testimonial-author text-muted">
-                        <span>John Doe</span>, Company Name
-                    </p>
-                </div>
-
-                <div class="col-md-3 text-center text-muted testimonial-quote-icon">
-                    <i class="fa fa-quote-left fa-3x"></i>
-                </div>
-
-            </div>--><!-- Testimonial -->
-            <!-- /Section content -->
-    <!--
-        </div>
-    </section>
-    -->
-    <!-- /SECTION: Testimonials -->
-
-    <!-- SECTION: Ready-To-Take -->
-    <!--
-    <section id="ready-to-take" class="section-small bg-blue">
+    <!-- Testimonials -->
+    <div class="slider-2">
         <div class="container">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <p class="txt-big txt-inline txt-white">There are many variations of passages</p>
-                <button class="btn btn-big btn-white-transparent" data-toggle="modal" data-target="#get-modal">Get consultation now <i class="fa fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- /SECTION: Ready-To-Take -->
-
-    <!-- SECTION: About -->
-    <section id="about" class="section">
-        <div class="container">
-
-            <!-- Section header -->
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <header>
-                        <h2 class="section-title">Quem somos</h2>
-                        <p class="section-subtitle text-muted"><h4>Somos uma empresa de tecnologia com foco na redução de custos com energia elétrica de pequenos e médios negócios.</h4></p>
-                    </header>
-                </div>
-            </div><!-- /Section header -->
-
-            <!-- Section content -->
-            <div class="row section-content">
-
-                <!-- Left column -->
-                <div class="col-md-4">
-
-                    <!-- About block -->
-                    <div class="about-block mt">
-                        <div class="about-icon media-left text-center">
-                            <i class="fa fa-html5 fa-3x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3>Gestão de Faturas</h3>
-                            <p class="text-muted text-justify">
-                                Realizamos a gestão mensal de suas contas de luz e lhe ajudamos a encontrar as melhores alternativas para reduzir seus gastos com energia elétrica.
-                               
-                            </p>
-                        </div>
-                    </div><!-- /About block -->
-
-                    <!-- About block -->
-                    <div class="about-block mt">
-                        <div class="about-icon media-left text-center">
-                            <i class="fa fa-diamond fa-3x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3>Relatórios de Mensais</h3>
-                            <p class="text-muted text-justify">
-                                Você receberá um relatório mensal lhe informando de maneira clara e objetiva o valor da redução dos seus gastos com energia elétrica.
-                            </p>
-                        </div>
-                    </div><!-- /About block -->
-
-                </div>
-                <!-- /Left column -->
-
-                <!-- Center column -->
-                <div class="col-md-4 text-center">
-
-                    <!-- Center image -->
-                    <div class="about-image mt">
-                        <img src="images/iphone.jpg">
-                    </div><!-- /Center image -->
-
-                </div><!-- /Center column -->
-
-                <!-- Right column -->
-                <div class="col-md-4">
-
-                    <!-- About block -->
-                    <div class="about-block mt">
-                        <div class="about-icon media-left text-center">
-                            <i class="fa fa-font fa-3x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3>Consultoria Especializada</h3>
-                            <p class="text-muted text-justify">
-                               Temos um time de Engenheiros Eletricistas especialistas ("coaches energéticos!") que lhe auxiliarão em todo o processo de gestão do seu consumo de energia elétrica e com as melhores estratégias de eficiência energética. 
-                            </p>
-                        </div>
-                    </div><!-- /About block -->
-
-                    <!-- About block -->
-                    <div class="about-block mt">
-                        <div class="about-icon media-left text-center">
-                            <i class="fa fa-flag fa-3x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3>Menos Burocracia!</h3>
-                            <p class="text-muted text-justify">
-                                Evite toda a burocracia com a distribuidora de energia elétrica. Nós realizaremos todo o trabalho burocrático por você!
-                            </p>
-                        </div>
-                    </div><!-- /About block -->
-
-                </div><!-- Right column -->
-
-            </div><!-- /Section content -->
-
-        </div>
-    </section>
-    <!-- /SECTION: About -->
-
-    <!-- SECTION: Form -->
-    <!--    <section id="form" class="section bg-blue txt-white">
-        <div class="container">
-
-            <div class="col-md-5 col-md-offset-1">
-
-                <header>
-                    <h2 class="section-title">Get free 30 days period</h2>
-                    <p class="section-subtitle">There are many variations of passages of Lorem Ipsum.</p>
-                </header>
-
-                <p class="txt-white txt-middle">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable.
-                </p>
-
-            </div>
-
-            <div class="col-md-5">
-
-                <div class="row">
-                    <h3 class="text-center">There are many variations</h3>
-                </div>
-            -->
-  
-                <!-- Form -->          <!--
-                <form method="post" class="form-ajax">
-                    <input type="hidden" name="form" value="Page form">
-                    <div class="row">
-                        <div class="form-group col-md-12">
-                            <input type="text" name="name" class="form-control" placeholder="Your name... *" required>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <input type="email" name="email" class="form-control" placeholder="Your e-mail... *" required>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <button type="submit" class="btn btn-block btn-big btn-red">Get free</button>
-                        </div>
-                    </div>
-                </form>
-                -->
-                <!-- /Form -->
-                <!--
-            </div>
-
-        </div>
-    </section>
-    -->
-    <!-- /SECTION: Form -->
-
-    <!-- SECTION: Features -->
-    <!--
-    <section id="features" class="section">
-        <div class="container">-->
-            <!-- Section header -->
-            <!--
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Few words from shop owners</h2>
+                    <p class="p-heading">You can read below a few testimonials from satisfied shop owners. Of course there are also some unhappy ones but they're not here</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <header>
-                        <h2 class="section-title">Soluções</h2>
-                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
-                    </header>
-                </div>
-            </div>--><!-- /Section header -->
+                <div class="col-lg-12">
 
-            <!-- 
-            <div class="row section-content">
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I am happy to have chosen Blink for our shop implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Samantha Bloom</div>
+                                                    <div class="occupation">Team Leader - Syncnow</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
 
-    
-                <div class="col-md-6 mt">
-                    <div class="media-left text-center">
-                        <div class="feature-icon bg-blue txt-white">
-                            <i class="fa fa-line-chart fa-4x"></i>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <h3>Lightweight & SEO</h3>
-                        <p class="text-muted text-justify">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form, by injected humour, or randomised words which don't look even slightly
-                            believable.
-                        </p>
-                    </div>
-                </div>Section content -->
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Totally recommended. I am happy to have chosen Blink for our shop implementation. Their great specialized experience helped the project and made it available 2 weeks prior the launch</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Nicolas Richter</div>
+                                                    <div class="occupation">Manager - Firstup</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
 
-                <!-- Feature block -->
-                <!--
-                <div class="col-md-6 mt">
-                    <div class="media-left text-center">
-                        <div class="feature-icon bg-red txt-white">
-                            <i class="fa fa-wrench fa-4x"></i>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <h3>Easy Customizable</h3>
-                        <p class="text-muted text-justify">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form, by injected humour, or randomised words which don't look even slightly
-                            believable.
-                        </p>
-                    </div>
-                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I am happy to have chosen Blink for our shop implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-3.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Mary Longhorn</div>
+                                                    <div class="occupation">Designer - Firstdev</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
 
-           
-                <div class="col-md-6 mt">
-                    <div class="media-left text-center">
-                        <div class="feature-icon bg-orange txt-white">
-                            <i class="fa fa-code fa-4x"></i>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <h3>Working Forms</h3>
-                        <p class="text-muted text-justify">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form, by injected humour, or randomised words which don't look even slightly
-                            believable.
-                        </p>
-                    </div>
-                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Totally recommended. I am happy to have chosen Blink for our shop implementation. Their great specialized experience helped the project and made it available 2 weeks prior the launch</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-4.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Mike Page</div>
+                                                    <div class="occupation">Developer - Chainlink</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
 
-         
-                <div class="col-md-6 mt">
-                    <div class="media-left text-center">
-                        <div class="feature-icon bg-green txt-white">
-                            <i class="fa fa-gears fa-4x"></i>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <h3>24/7 Support</h3>
-                        <p class="text-muted text-justify">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form, by injected humour, or randomised words which don't look even slightly
-                            believable.
-                        </p>
-                    </div>
-                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I am happy to have chosen Blink for our shop implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-5.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Susanne Blake</div>
+                                                    <div class="occupation">Operations - Launchday</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
 
-            </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Totally recommended. I am happy to have chosen Blink for our shop implementation. Their great specialized experience helped the project and made it available 2 weeks prior the launch</p>
+                                            <div class="details">
+                                                <img class="testimonial-image" src="images/testimonial-6.jpg" alt="alternative">
+                                                <div class="text">
+                                                    <div class="testimonial-author">Vanya Dropper</div>
+                                                    <div class="occupation">Marketer - Flinco</div>
+                                                </div> <!-- end of text -->
+                                            </div> <!-- end of testimonial-details -->
+                                        </div>
+                                    </div> 
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
 
-        </div>
-    </section>-->
-    <!-- /SECTION: Features -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
 
-    <!-- SECTION: Get-Today -->
-    <!--
-    <section id="get-today" class="section-small bg-blue">
-        <div class="container">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <p class="txt-big txt-inline txt-white">There are many variations</p>
-                <button class="btn btn-big btn-white-transparent" data-toggle="modal" data-target="#get-modal">Get 30% <i class="fa fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- /SECTION: Get-Today -->
-    
-    <!-- SECTION: Best Feature -->
-    <!--
-    <section id="best-feature" class="section non-pb">
-        <div class="container">
-    -->
-            <!-- Section header -->
-            <!-- 
+
+    <!-- Newsletter -->
+	<div class="form-1">
+		<div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <header>
-                        <h2 class="section-title">Best Feature</h2>
-                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
-                    </header>
-                </div>
-            </div
-            -->><!-- /Section header -->
-
-            <!-- Section content -->
-            <!-- 
-            <div class="row section-content">
-
-                <div class="col-md-8 col-md-offset-2 text-center">
-
-                    <div class="best-feature-img">
-                        <img src="images/macbook.jpg">
-                    </div>
-
-                </div>
-            </div>--><!-- /Section content -->
-            <!--
-        </div>
-    </section>-->
-    <!-- SECTION: /Best Feature -->
-
-    <!-- SECTION: Contact -->
-    <section id="contact" class="section bg-blue">
-        <div class="container">
-
-            <!-- Section header -->
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Subscribe And Follow Us</h2>
+                    <p class="p-heading">Be part of the story and follow us on Twitter via <a href="#your-link">@name</a> and subscribe to the newsletter for news and updates about our workshops</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center txt-white">
-                    <header>
-                        <h2 class="section-title">INFORMAÇÕES DE CONTATO</h2>
-                        <p class="section-subtitle">AVENIDA SEVERINO MASSA SPINELLI, nº 368, TAMBAU, CEP: 58039-210</p>
-                        <p>João Pessoa - PB</p>  
-                    </header>
-                </div>
-            </div><!-- /Section header -->
-
-            <!-- Section content -->
-            <div class="row section-content">
-                <!--             
-                <div class="col-md-6 mt">
-                    <form method="post" class="form-ajax">
-                        <input type="hidden" name="form" value="Contact form">
-                        <div class="row">
-                            <div class="form-group col-md-12">
-                                <input type="text" name="name" class="form-control" placeholder="Your name... *" required>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <input type="email" name="email" class="form-control" placeholder="Your e-mail... *" required>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <textarea name="message" class="form-control" placeholder="Your message..."></textarea>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <button type="submit" class="btn btn-big btn-white">Send message</button>
-                            </div>
+                <div class="col-lg-12">
+                    
+                    <!-- Newsletter Form -->
+                    <form>
+                        <div class="form-group mail">
+                            <input type="email" class="form-control-input" id="nemail" required>
+                            <label class="label-control" for="nemail">Email address</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Subscribe</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
-                </div> -->
-
-                <!-- Contact information -->
-                <div class="col-md-6 col-md-offset-3 text-center txt-white">
-
-
-                    <div class="row">
-
-                        <div class="col-md-4 text-center contact-block mt">
-                            <i class="fa fa-4x fa-mobile-phone"></i>
-                            <span>(83) 9999-9999</span>
-                        </div>
-
-                        <div class="col-md-4 text-center contact-block mt">
-                            <i class="fa fa-4x fa-envelope"></i>
-                            <span>rewa@rewatech.co</span>
-                        </div>
-
-                        <div class="col-md-4 text-center contact-block mt">
-                            <i class="fa fa-4x fa-home"></i>
-                            <span>www.rewatech.co</span>
-                        </div>
-
-                    </div>
+                    <!-- end of newsletter form -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of newsletter -->
 
 
-                </div><!-- /Contact information -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>About Kora</h6>
+                        <p class="p-small">Kora is a SaaS app website Bootstrap HTML template packed with features like logo slider, details lightbox, testimonial slider dropdown</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Links</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#intro">Intro</a>, <a class="page-scroll" href="#features">Features</a>, <a class="page-scroll" href="#details">Details</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
 
-            </div><!-- /Section content -->
 
-        </div>
-    </section>
-    <!-- /SECTION: Contact -->
-
-    <script>
-        $(document).ready(function () {
-            let msg = $("#msg").val();
-            let nome = $("#nome").val();
-            if(msg == 1) {
-                $.notify("Obrigado "+nome+", entraremos em contato em breve!", "success");
-                        }
-        });
-    </script> 
-
-</main>
-<!-- /MAIN -->
-
-<!-- FOOTER -->
-<footer class="section-small">
-    <div class="container">
-        <div class="row">
-
-            <!-- Copyright -->
-            <div class="col-md-6">
-                <p>REWA TECH. TODOS OS DIREITOS RESERVADOS. CNPJ:</p>
-            </div><!-- /Copyright -->
-
-            <!-- Social buttons -->
-            <div class="col-md-6">
-                <div class="footer-social">
-                    <a class="fa fa-facebook" href="#"></a>
-                    <a class="fa fa-twitter" href="#"></a>
-                    <a class="fa fa-google-plus" href="#"></a>
-                    <a class="fa fa-instagram" href="#"></a>
-                </div>
-            </div><!-- /Social buttons -->
-
-        </div>
-    </div>
-</footer>
-<!-- /FOOTER -->
-
-<!-- MODAL: Get-Modal -->
-<div class="modal fade" id="get-modal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content bg-blue">
-
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div class="modal-title txt-white">Contact Us</div>
-            </div>
-
-            <div class="modal-body">
-                <form method="post" class="form-ajax">
-
-                    <input type="hidden" name="form" value="Get In Touch">
-
-                    <div class="row">
-                        <span class="form-contact-success-message"></span>
-                    </div>
-
-                    <div class="row-fields row">
-
-                        <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name... *" required>
-                        </div>
-
-                        <div class="form-group col-md-6">
-                            <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required>
-                        </div>
-
-                        <div class="form-group col-sm-12">
-                            <textarea name="message" class="form-control" placeholder="Message... "></textarea>
-                        </div>
-
-                        <div class="form-group col-sm-12">
-                            <button type="submit" class="btn btn-white">Send Message</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /MODAL: Get-Modal -->
-
-<!-- MODAL: Result Message -->
-<div class="modal fade" id="result" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body text-center">
-                <div class="modal-icon"></div>
-                <p class="modal-result"></p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /MODAL: Result Message -->
-
-<!-- Scroll-To-Top -->
-<a href="#home" id="scroll-to-top" class="bg-blue txt-white"><i class="fa fa-2x fa-angle-up"></i></a>
-<!-- /Scroll-To-Top -->
-
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-<![endif]-->
-<script src="js/wow.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/general.js"></script>
-
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>

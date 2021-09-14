@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Page title -->
+    <title>Rewa Energy</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+   
+    <!-- Style -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/simulador.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/notify.min.js"></script>    
+</head>
+<body>
+<!-- HEADER -->
+<header id="home" data-stellar-background-ratio="0.5">
+    <!-- Navigation -->
+    <nav id="navigation" class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-image"></a>
+            </div>
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+
+                <i class="fa fa-list"></i>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre a REWA</a></li>
+                    <!--<li><a href="#features">Soluções</a></li> -->
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation -->
+    <!-- Home container -->
+    <div class="home-container container vertical-top">
+        <div class="row">
+            <div class="col-md-6 txt-white">
+                <br><br>
+                
+                    <h1>Tenha mais tempo e energia pra focar no seu negócio!</h1>
+                    <h1>Deixe que da sua conta de energia a gente cuida.</h1>
+                    <!--
+                <h1>REDUZA</h1><h2><p>&nbsp&nbsp  sua conta de energia elétrica!<br></h2>
+                     Sabia que é possível reduzir sua conta de luz em até 30%? <br>
+                     Podemos ajudar seu negócio a economizar com energia. <br>
+                     Envie os dados abaixo que faremos uma avaliação gratuita!
+                    -->
+                <p>
+                <!-- Form -->
+                <!--
+                <div class="row">
+                    <form method="post" class="form-ajax">
+                        <input type="hidden" name="form" value="Home form">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Nome*" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Seu e-mail empresarial:*" required>
+                            </div>
+                        </div>  
+
+                        <!--
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="SelectAtividade">Ramo de Atividade</label>
+                                <select class="form-control"  id="SelectAtividade">
+                                    <option value="Comércio">Comércio</option>
+                                    <option>Clínica</option>
+                                    <option>Restaurante</option>
+                                    <option>Residência</option>
+                                    <option>Outro</option>
+                                  </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="selectUF">Estado</label>
+                                <select class="form-control form-control-lg" id="selectUF">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraAbre">Horário de Abertura (seg à sex) </label>
+                                <select class="form-control form-control-lg" id="selectHoraAbre">
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">07:00</option>
+                                    <option value="0830">08:00</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+
+                                  </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraFecha">Horário de Fechamento (seg à sex): </label>
+                                <select class="form-control form-control-lg" id="selectHoraFecha">
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">21:30</option>
+                                    <option value="2200">23:00</option>
+                                    <option value="2230">23:30</option>                                  
+                                  </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraAbreSab">Horário de Abertura (Sábado):</label>
+                                <select class="form-control form-control-lg" id="selectHoraAbreSab">
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">07:00</option>
+                                    <option value="0830">08:00</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+
+                                  </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="selectHoraFechaSab">Horário de Fechamento (Sábado):</label>
+                                <select class="form-control form-control-lg" id="selectHoraFechaSab">
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">21:30</option>
+                                    <option value="2200">23:00</option>
+                                    <option value="2230">23:30</option>                                  
+                                  </select>
+                            </div>
+                        </div>
+                        -->
+                        <!--
+                        <div class="row">
+                            <div class="form-group col-md-6 text-center">
+                                <button type="submit" class="btn btn-block btn-big btn-red">Quero Economizar!</button>
+                            </div>
+                        </div>
+                        -->
+                       
+                    </form><!-- /Form -->
+            </div>
+        </div>
+    </div>
+    <!-- /Home container -->
+</header>
+<!-- /HEADER -->
+
+<!-- MAIN -->
+<main class="main-container">
+    <section>
+        <div class="simulation">
+            <div class="col-simu-input">
+                <h4 class="sub-title-sim">SIMULADOR REWA</h4>
+                <h4>SIMULE SUA ECONOMIA COM A TARIFA BRANCA</h4>
+                <p>Insira algumas informações sobre o consumo de energia da sua empresa.</p>
+                <form>
+                    <select class="input-select" name="carlist" form="carform" id="input-select">
+                        <option class="option" value="" disabled selected>Selecione a sua distribuidora</option>
+                        <option class="option" value="EPB">PB - ENERGISA</option>
+                    </select>
+                    <div class="range-input">
+                        <h4>Valor médio da sua fatura por mês</h4>
+                        <p>R$</p>
+                        <h3 id="valor">1.000,00</h3>
+                    </div>
+                    <input type="range" min="2000" max="20000" step="500" value="2000" class="slider" id="Range">
+                    <input type="hidden" id="msg" value="">
+                    <input type="hidden" id="nome" value="">
+                </form>
+            </div>
+            <div class="col-simu-resul">
+                <p class="p-resu">Sua economia anual será de</p>
+                <div class="mensal-container">
+                    <div class="anual-container">
+                        <h3 class="econo light-year">R$</h3>
+                        <h3 id="val-econo" class="econo"><b>4.320,00</b></h3>
+                    </div>
+                    <div class="mensal-content">
+                        <p class="tit-mensal">POR MÊS ISSO REPRESENTA </p>
+                        <div class="mensal-tit-content">
+                            <p><b>R$</b></p>
+                            <p><b id="econo-mensal">360.00</b></p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="others-results">
+                    <div class="content-results">
+                        <img class="img-sus" src="images/icon/home_simulador_co2.svg" alt="" title="">
+                        <div class="item-sus">
+                            <h3 id="co2" class="tit-nat">0.28</h3>
+                            <p class="co-tre">ton de CO2 poupados por mês</p>
+                        </div>
+                    </div>
+                    <div class="content-results">
+                        <img class="img-sus" src="images/icon/home_simulador_arvore.svg" alt="" title="">
+                        <div class="item-sus">
+                            <h3 id="arvores" class="tit-nat">1</h3>
+                            <p class="co-tre">Árvores compensadas por mês</p>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+        <div class="contato">        
+            <form action="sendForm.php" method="POST">
+                <div class="input-area">
+                    <div class="box-input">
+                        <label>Nome do Responsável</label>
+                        <input type="text" placeholder="João da Costa Silva" name="name" id="name" maxlength="255">
+                        <span id="error-name" class="error"></span>
+                    </div>
+                    <div class="box-input">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="joao@exemple.com" name="email" id="email" maxlength="255">
+                        <span id="error-email" class="error"></span>
+                    </div>
+                    <div class="box-input">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(99) 99999-9999" name="tel" id="tel" maxlength="18">
+                        <span id="error-tel" class="error"></span>
+                    </div>
+                    <input type="hidden" name="val-medio" id="val-medio">
+                    <input type="hidden" name="econ-mensal" id="econ-mensal">
+                    <input type="hidden" name="econ-anual" id="econ-anual">
+                    <input type="hidden" name="con-selected" id="con-selected">
+                </div>
+                <div class="container container-button">
+                    <button type="submit" disabled class="btn disabled">QUERO ECONOMIZAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- SECTION: Clients or Partners -->
+        <!--
+    <section id="clients" class="bg-grey pv">
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel owl-theme text-center">
+                    <div class="item">
+                        <img src="img/partner.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/partner.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/partner.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/partner.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/partner.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- /SECTION: Clients or Partners -->
+
+    <!-- SECTION: Testimonials -->
+        <!--
+    <section id="testimonials" class="section">
+        <div class="container">
+        -->
+            <!-- Section header -->
+            <!--
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <header>
+                        <h2 class="section-title">What others are saying</h2>
+                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
+                    </header>
+                </div>
+            </div>
+            --><!-- /Section header -->
+
+            <!-- Section content -->
+            <!-- Testimonial -->
+            <!--            <div class="row testimonial section-content">
+
+                <div class="col-md-3 text-center text-muted testimonial-quote-icon">
+                    <i class="fa fa-quote-left fa-3x"></i>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <p class="testimonial-text">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                    <p class="testimonial-author text-muted">
+                        <span>John Doe</span>, Company Name
+                    </p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <div class="testimonial-picture">
+                        <img src="images/testimonials-author-1.jpg">
+                    </div>
+                </div>
+            </div>-->
+<!-- /Testimonial -->
+
+            <!-- Testimonial -->
+            <!--
+            <div class="row testimonial mt">
+
+                <div class="col-md-3 text-center">
+                    <div class="testimonial-picture">
+                        <img src="images/testimonials-author-2.jpg">
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <p class="testimonial-text">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                    <p class="testimonial-author text-muted">
+                        <span>John Doe</span>, Company Name
+                    </p>
+                </div>
+
+                <div class="col-md-3 text-center text-muted testimonial-quote-icon">
+                    <i class="fa fa-quote-left fa-3x"></i>
+                </div>
+
+            </div>--><!-- Testimonial -->
+            <!-- /Section content -->
+    <!--
+        </div>
+    </section>
+    -->
+    <!-- /SECTION: Testimonials -->
+
+    <!-- SECTION: Ready-To-Take -->
+    <!--
+    <section id="ready-to-take" class="section-small bg-blue">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <p class="txt-big txt-inline txt-white">There are many variations of passages</p>
+                <button class="btn btn-big btn-white-transparent" data-toggle="modal" data-target="#get-modal">Get consultation now <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- /SECTION: Ready-To-Take -->
+
+    <!-- SECTION: About -->
+    <section id="about" class="section">
+        <div class="container">
+
+            <!-- Section header -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <header>
+                        <h2 class="section-title">Quem somos</h2>
+                        <p class="section-subtitle text-muted"><h4>Somos uma empresa de tecnologia com foco na redução de custos com energia elétrica de pequenos e médios negócios.</h4></p>
+                    </header>
+                </div>
+            </div><!-- /Section header -->
+
+            <!-- Section content -->
+            <div class="row section-content">
+
+                <!-- Left column -->
+                <div class="col-md-4">
+
+                    <!-- About block -->
+                    <div class="about-block mt">
+                        <div class="about-icon media-left text-center">
+                            <i class="fa fa-html5 fa-3x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Gestão de Faturas</h3>
+                            <p class="text-muted text-justify">
+                                Realizamos a gestão mensal de suas contas de luz e lhe ajudamos a encontrar as melhores alternativas para reduzir seus gastos com energia elétrica.
+                               
+                            </p>
+                        </div>
+                    </div><!-- /About block -->
+
+                    <!-- About block -->
+                    <div class="about-block mt">
+                        <div class="about-icon media-left text-center">
+                            <i class="fa fa-diamond fa-3x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Relatórios de Mensais</h3>
+                            <p class="text-muted text-justify">
+                                Você receberá um relatório mensal lhe informando de maneira clara e objetiva o valor da redução dos seus gastos com energia elétrica.
+                            </p>
+                        </div>
+                    </div><!-- /About block -->
+
+                </div>
+                <!-- /Left column -->
+
+                <!-- Center column -->
+                <div class="col-md-4 text-center">
+
+                    <!-- Center image -->
+                    <div class="about-image mt">
+                        <img src="images/iphone.jpg">
+                    </div><!-- /Center image -->
+
+                </div><!-- /Center column -->
+
+                <!-- Right column -->
+                <div class="col-md-4">
+
+                    <!-- About block -->
+                    <div class="about-block mt">
+                        <div class="about-icon media-left text-center">
+                            <i class="fa fa-font fa-3x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Consultoria Especializada</h3>
+                            <p class="text-muted text-justify">
+                               Temos um time de Engenheiros Eletricistas especialistas ("coaches energéticos!") que lhe auxiliarão em todo o processo de gestão do seu consumo de energia elétrica e com as melhores estratégias de eficiência energética. 
+                            </p>
+                        </div>
+                    </div><!-- /About block -->
+
+                    <!-- About block -->
+                    <div class="about-block mt">
+                        <div class="about-icon media-left text-center">
+                            <i class="fa fa-flag fa-3x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Menos Burocracia!</h3>
+                            <p class="text-muted text-justify">
+                                Evite toda a burocracia com a distribuidora de energia elétrica. Nós realizaremos todo o trabalho burocrático por você!
+                            </p>
+                        </div>
+                    </div><!-- /About block -->
+
+                </div><!-- Right column -->
+
+            </div><!-- /Section content -->
+
+        </div>
+    </section>
+    <!-- /SECTION: About -->
+
+    <!-- SECTION: Form -->
+    <!--    <section id="form" class="section bg-blue txt-white">
+        <div class="container">
+
+            <div class="col-md-5 col-md-offset-1">
+
+                <header>
+                    <h2 class="section-title">Get free 30 days period</h2>
+                    <p class="section-subtitle">There are many variations of passages of Lorem Ipsum.</p>
+                </header>
+
+                <p class="txt-white txt-middle">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.
+                </p>
+
+            </div>
+
+            <div class="col-md-5">
+
+                <div class="row">
+                    <h3 class="text-center">There are many variations</h3>
+                </div>
+            -->
+  
+                <!-- Form -->          <!--
+                <form method="post" class="form-ajax">
+                    <input type="hidden" name="form" value="Page form">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <input type="text" name="name" class="form-control" placeholder="Your name... *" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="email" name="email" class="form-control" placeholder="Your e-mail... *" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-block btn-big btn-red">Get free</button>
+                        </div>
+                    </div>
+                </form>
+                -->
+                <!-- /Form -->
+                <!--
+            </div>
+
+        </div>
+    </section>
+    -->
+    <!-- /SECTION: Form -->
+
+    <!-- SECTION: Features -->
+    <!--
+    <section id="features" class="section">
+        <div class="container">-->
+            <!-- Section header -->
+            <!--
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <header>
+                        <h2 class="section-title">Soluções</h2>
+                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
+                    </header>
+                </div>
+            </div>--><!-- /Section header -->
+
+            <!-- 
+            <div class="row section-content">
+
+    
+                <div class="col-md-6 mt">
+                    <div class="media-left text-center">
+                        <div class="feature-icon bg-blue txt-white">
+                            <i class="fa fa-line-chart fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h3>Lightweight & SEO</h3>
+                        <p class="text-muted text-justify">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
+                        </p>
+                    </div>
+                </div>Section content -->
+
+                <!-- Feature block -->
+                <!--
+                <div class="col-md-6 mt">
+                    <div class="media-left text-center">
+                        <div class="feature-icon bg-red txt-white">
+                            <i class="fa fa-wrench fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h3>Easy Customizable</h3>
+                        <p class="text-muted text-justify">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
+                        </p>
+                    </div>
+                </div>
+
+           
+                <div class="col-md-6 mt">
+                    <div class="media-left text-center">
+                        <div class="feature-icon bg-orange txt-white">
+                            <i class="fa fa-code fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h3>Working Forms</h3>
+                        <p class="text-muted text-justify">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
+                        </p>
+                    </div>
+                </div>
+
+         
+                <div class="col-md-6 mt">
+                    <div class="media-left text-center">
+                        <div class="feature-icon bg-green txt-white">
+                            <i class="fa fa-gears fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h3>24/7 Support</h3>
+                        <p class="text-muted text-justify">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>-->
+    <!-- /SECTION: Features -->
+
+    <!-- SECTION: Get-Today -->
+    <!--
+    <section id="get-today" class="section-small bg-blue">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <p class="txt-big txt-inline txt-white">There are many variations</p>
+                <button class="btn btn-big btn-white-transparent" data-toggle="modal" data-target="#get-modal">Get 30% <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- /SECTION: Get-Today -->
+    
+    <!-- SECTION: Best Feature -->
+    <!--
+    <section id="best-feature" class="section non-pb">
+        <div class="container">
+    -->
+            <!-- Section header -->
+            <!-- 
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <header>
+                        <h2 class="section-title">Best Feature</h2>
+                        <p class="section-subtitle text-muted">There are many variations of passages of Lorem Ipsum.</p>
+                    </header>
+                </div>
+            </div
+            -->><!-- /Section header -->
+
+            <!-- Section content -->
+            <!-- 
+            <div class="row section-content">
+
+                <div class="col-md-8 col-md-offset-2 text-center">
+
+                    <div class="best-feature-img">
+                        <img src="images/macbook.jpg">
+                    </div>
+
+                </div>
+            </div>--><!-- /Section content -->
+            <!--
+        </div>
+    </section>-->
+    <!-- SECTION: /Best Feature -->
+
+    <!-- SECTION: Contact -->
+    <section id="contact" class="section bg-blue">
+        <div class="container">
+
+            <!-- Section header -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center txt-white">
+                    <header>
+                        <h2 class="section-title">INFORMAÇÕES DE CONTATO</h2>
+                        <p class="section-subtitle">AVENIDA SEVERINO MASSA SPINELLI, nº 368, TAMBAU, CEP: 58039-210</p>
+                        <p>João Pessoa - PB</p>  
+                    </header>
+                </div>
+            </div><!-- /Section header -->
+
+            <!-- Section content -->
+            <div class="row section-content">
+                <!--             
+                <div class="col-md-6 mt">
+                    <form method="post" class="form-ajax">
+                        <input type="hidden" name="form" value="Contact form">
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="text" name="name" class="form-control" placeholder="Your name... *" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="email" name="email" class="form-control" placeholder="Your e-mail... *" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea name="message" class="form-control" placeholder="Your message..."></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-big btn-white">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+
+                <!-- Contact information -->
+                <div class="col-md-6 col-md-offset-3 text-center txt-white">
+
+
+                    <div class="row">
+
+                        <div class="col-md-4 text-center contact-block mt">
+                            <i class="fa fa-4x fa-mobile-phone"></i>
+                            <span>(83) 9999-9999</span>
+                        </div>
+
+                        <div class="col-md-4 text-center contact-block mt">
+                            <i class="fa fa-4x fa-envelope"></i>
+                            <span>rewa@rewatech.co</span>
+                        </div>
+
+                        <div class="col-md-4 text-center contact-block mt">
+                            <i class="fa fa-4x fa-home"></i>
+                            <span>www.rewatech.co</span>
+                        </div>
+
+                    </div>
+
+
+                </div><!-- /Contact information -->
+
+            </div><!-- /Section content -->
+
+        </div>
+    </section>
+    <!-- /SECTION: Contact -->
+
+    <script>
+        $(document).ready(function () {
+            let msg = $("#msg").val();
+            let nome = $("#nome").val();
+            if(msg == 1) {
+                $.notify("Obrigado "+nome+", entraremos em contato em breve!", "success");
+                        }
+        });
+    </script> 
+
+</main>
+<!-- /MAIN -->
+
+<!-- FOOTER -->
+<footer class="section-small">
+    <div class="container">
+        <div class="row">
+
+            <!-- Copyright -->
+            <div class="col-md-6">
+                <p>REWA TECH. TODOS OS DIREITOS RESERVADOS. CNPJ:</p>
+            </div><!-- /Copyright -->
+
+            <!-- Social buttons -->
+            <div class="col-md-6">
+                <div class="footer-social">
+                    <a class="fa fa-facebook" href="#"></a>
+                    <a class="fa fa-twitter" href="#"></a>
+                    <a class="fa fa-google-plus" href="#"></a>
+                    <a class="fa fa-instagram" href="#"></a>
+                </div>
+            </div><!-- /Social buttons -->
+
+        </div>
+    </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- MODAL: Get-Modal -->
+<div class="modal fade" id="get-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content bg-blue">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title txt-white">Contact Us</div>
+            </div>
+
+            <div class="modal-body">
+                <form method="post" class="form-ajax">
+
+                    <input type="hidden" name="form" value="Get In Touch">
+
+                    <div class="row">
+                        <span class="form-contact-success-message"></span>
+                    </div>
+
+                    <div class="row-fields row">
+
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name... *" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <textarea name="message" class="form-control" placeholder="Message... "></textarea>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <button type="submit" class="btn btn-white">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /MODAL: Get-Modal -->
+
+<!-- MODAL: Result Message -->
+<div class="modal fade" id="result" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="modal-icon"></div>
+                <p class="modal-result"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /MODAL: Result Message -->
+
+<!-- Scroll-To-Top -->
+<a href="#home" id="scroll-to-top" class="bg-blue txt-white"><i class="fa fa-2x fa-angle-up"></i></a>
+<!-- /Scroll-To-Top -->
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/general.js"></script>
+
+</body>
+</html>
