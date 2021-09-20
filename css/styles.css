@@ -176,6 +176,7 @@ a:hover {
 	font-weight: 600;
 	font-size: 0.75rem;
 	line-height: 1.125rem;
+  width: fit-content;
 }
 
 .btn-solid-reg {
@@ -607,7 +608,7 @@ input[type='checkbox'] {
 /*****************/
 .header {
 	padding-top: 7rem;
-	padding-bottom: 2.5rem;
+	padding-bottom: 5rem;
 	background: url('../images/header-background.png') center center no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -615,6 +616,9 @@ input[type='checkbox'] {
 
 .header .text-container {
 	margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header .h1-large {
@@ -626,8 +630,17 @@ input[type='checkbox'] {
 }
 
 .header .btn-solid-lg {
-	margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
 	margin-bottom: 0.75rem;
+  min-width: 250px;
+}
+
+.header .btn-outline-lg {
+  display: flex;
+  justify-content: center;
+	margin-bottom: 0.75rem;
+  min-width: 250px;
 }
 
 
@@ -673,6 +686,17 @@ input[type='checkbox'] {
 
 .basic-1 p {
 	margin-bottom: 1.875rem;
+}
+
+.col-lg-5  {
+  display: flex;
+  align-items: column;
+}
+
+#intro-basic-1 .col-lg-5  {
+  border: 1px solid green;
+  display: flex;
+  align-items: column;
 }
 
 
@@ -787,6 +811,10 @@ input[type='checkbox'] {
 	text-align: left;
 }
 
+.col-lg-7 .image-container {
+  margin-top: 1rem;
+}
+
 .lightbox-basic .image-container {
 	margin-bottom: 3rem;
 	text-align: center;
@@ -893,7 +921,9 @@ input[type='checkbox'] {
 }
 
 .basic-3 .text-container {
-	margin-bottom: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .basic-3 h2 {
@@ -1207,10 +1237,9 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .btn-solid-lg {
-		margin-bottom: 0;
+		margin-bottom: 15px;
 	}
 	/* end of header */
-
 
 	/* Newsletter */
 	.form-1 .form-group {
@@ -1223,6 +1252,15 @@ a:hover.back-to-top {
 		width: 20rem;
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
+	}
+
+  .basic-3 .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .basic-3 .image-container {
+		margin-bottom: 2rem;
 	}
 
 	.form-1 .form-control-submit-button {
@@ -1252,6 +1290,11 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
+  .basic-3 .container .row {
+    display: flex;
+    flex-direction: row;   
+  }
 
 	.p-heading {
 		width: 34rem;
@@ -1323,12 +1366,14 @@ a:hover.back-to-top {
 	/* Header */
 	.header {
 		padding-top: 10rem;
-		padding-bottom: 7rem;
+		padding-bottom: 4rem;
 		text-align: left;
 	}
 
 	.header .text-container {
-		margin-top: 3.5rem;
+    margin: 0 0 0.5rem 0 ;
+    display: flex;
+    flex-direction: column;
 	}
 	/* end of header */
 
@@ -1346,7 +1391,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-1 .text-container {
-		margin-top: 3rem;
+
 	}
 	/* end of introduction */
 
@@ -1371,7 +1416,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-2 .text-container {
-		margin-top: 3.75rem;
+
 	}
 
 	.basic-2 h2 {
@@ -1391,21 +1436,15 @@ a:hover.back-to-top {
 	}
 	/* end of details lightbox */
 
-
-	/* Details 2 */
-	.basic-3 .text-container {
-		margin-bottom: 0;
-	}
-	/* end of details 2 */
-
-
 	/* Details 3 */
 	.basic-4 .image-container {
 		margin-bottom: 0;
 	}
 
 	.basic-4 .text-container {
-		margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	/* end of details 3 */
 
@@ -1511,11 +1550,11 @@ a:hover.back-to-top {
 	.header {
 		overflow-x: hidden;
 		padding-top: 10.75rem;
-		padding-bottom: 13rem;
+		padding-bottom: 5rem;
 	}
 
 	.header .text-container {
-		margin-top: 6.5rem;
+
 	}
 
 	.header img {
@@ -1527,7 +1566,9 @@ a:hover.back-to-top {
 
 	/* Introduction */
 	.basic-1 .text-container {
-		margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	/* end of introduction */
 
@@ -1550,7 +1591,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-2 .text-container {
-		margin-top: 6.5rem;
+
 	}
 	/* end of details 1 */
 
@@ -1568,14 +1609,18 @@ a:hover.back-to-top {
 	}
 
 	.basic-3 .text-container {
-		margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	/* end of details 2 */
 
 
 	/* Details 3 */
 	.basic-4 .text-container {
-		margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	/* end of details 3 */
 
