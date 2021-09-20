@@ -1284,7 +1284,6 @@ a:hover.back-to-top {
   .basic-3 .container .row {
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid red;
   }
   .basic-3 .image-container {
 		margin-bottom: 2rem;
