@@ -2,6 +2,138 @@
    Description: Custom JS file
 */
 
+const API_URL = 'http://localhost:3333';
+
+const leadForm = document.getElementById('leadForm');
+
+const nome = document.getElementById('name');
+const email = document.getElementById('email');
+const telefone = document.getElementById('telefone');
+const cnpj = document.getElementById('cnpj');
+const valorConta = document.getElementById('valorConta');
+const submitForm = document.getElementById('submitBtn');
+
+const eraseLetters = value => value.replace(/\D/g, '');
+
+function switchCanSubmitStatus() {
+  submitForm.disabled = !submitForm.disabled;
+};
+
+leadForm.addEventListener('submit', async e => {
+  e.preventDefault();
+
+  if (!isValidForm()) return;
+
+  try {
+    await fetch(`${API_URL}/leads`,{
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        nome: nome.value,
+        email: email.value,
+        telefone: telefone.value,
+        cnpj: cnpj.value,
+        valorConta: valorConta.value
+      })
+    });
+    cleanLeadForm();
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
+    $('body').addClass('stop-scrolling')
+    document.getElementsByClassName("popup")[0].classList.add("active");
+  } catch(err) {
+    console.error(err)
+  }
+
+});
+
+
+function isValidForm() {
+  const formErrors = [];
+
+  if (nome.value.length < 5) {
+    formErrors.push('O nome deve conter ao menos 4 carateres.');
+    nome.classList.add('red-border');
+    console.log(nome.classList)
+  }
+
+  if (telefone.value.length < 13) {
+    formErrors.push('O telefone deve conter ddd + 8 ou 9 caracteres.');
+    telefone.classList.add('red-border');
+  }
+  
+  const cnpjLength = cnpj.value.length;
+  if (cnpjLength > 0 && cnpjLength < 17) {
+    formErrors.push('O CNPJ deve conter 17 caracteres.');
+    cnpj.classList.add('red-border');
+  }
+  
+  cleanInputErrors();
+  showErrors(formErrors);
+  return formErrors.length === 0;
+}
+
+function cleanSpecialChar(ref) {
+  ref.value = ref.value.replace(/[^a-zA-Z ]/g, "");
+}
+
+function cleanInputErrors() {
+  const errorsBox = document.getElementById("errors-box");
+  errorsBox.innerHTML = '';
+
+  nome.classList.remove("red-border");
+  telefone.classList.remove("red-border");
+  cnpj.classList.remove("red-border");
+}
+
+function showErrors(errors = []) {
+
+  if (errors.length === 0) return;
+
+  const errorsBox = document.getElementById("errors-box");
+
+  for (const errText of errors) {
+    var errDiv = document.createElement('div');
+    errDiv.innerHTML = errText;
+    errDiv.className = 'errorText';
+    errorsBox.appendChild(errDiv);
+  }
+}
+
+
+
+function cleanLeadForm() {
+  nome.value = '';
+  email.value = '';
+  telefone.value = '';
+  cnpj.value = '';
+  valorConta.value = '';
+} 
+
+function maskCNPJ(ref) {
+  ref.value = eraseLetters(ref.value)
+    .replace(/(\d{2})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d)/, '$1/$2')
+    .replace(/(\d{4})(\d{1,2})/, '$1-$2');
+};
+
+function maskPhone(ref) {
+  const cleanString = eraseLetters(ref.value);
+
+  if (!cleanString) return ref.value = '';
+
+  const stringMasked = '(' + cleanString.replace(/(\d{2})(\d)/, '$1)$2');
+
+  const fixPhoneLen = 10;
+  return ref.value = cleanString.length <= fixPhoneLen ? 
+    stringMasked.replace(/(\d{4})(\d)/, '$1-$2') :
+    stringMasked.replace(/(\d{5})(\d)/, '$1-$2');
+};
+
+document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+  document.getElementsByClassName("popup")[0].classList.remove("active");
+  window.location = 'index.html';
+});
 
 (function($) {
     "use strict"; 

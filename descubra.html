@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
+    <!-- Google ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Your description">
     <meta name="author" content="Your name">
@@ -27,13 +30,33 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
+
+  <div class="popup">
+    <div class="center popup-inside">
+      <div class="icon">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="title">
+        Sucesso!!
+      </div>
+      <div class="description">
+        Nós já recebemos seus dados e em breve entraremos em contato.
+      </div>
+      <div class="dismiss-btn">
+        <button id="dismiss-popup-btn">
+          Entendido!
+        </button>
+      </div>
+    </div>
+  </div>
+
     
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -102,9 +125,9 @@
                         <p class="mb-4">Preencha os dados abaixo que entraremos em contato!</p>
 
                         <!-- Sign Up Form -->
-                        <form id="signUpForm">
+                        <form id="leadForm">
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="name" required>
+                                <input type="text" class="form-control-input" id="name" onkeyup="cleanSpecialChar(this)" required>
                                 <label class="label-control" for="name">Nome</label>
                             </div>
                             <div class="form-group">
@@ -112,26 +135,34 @@
                                 <label class="label-control" for="email">E-mail</label>
                             </div>
                             <div class="form-group">
-                                <input type="phone" class="form-control-input" id="telefone" required>
-                                <label class="label-control" for="email">Telefone</label>
+                                <input type="phone" class="form-control-input" id="telefone" minlength='13' maxlength="14" onkeyup="maskPhone(this)" required>
+                                <label class="label-control" for="telefone">Telefone</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="password" required>
-                                <label class="label-control" for="password">CNPJ</label>
+                                <input type="text" class="form-control-input" id="cnpj" minlength='17' maxlength="17" onkeyup="maskCNPJ(this)">
+                                <label class="label-control" for="cnpj">CNPJ</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="conta" required>
-                                <label class="label-control" for="password">Valor da conta de luz (R$)</label>
+                                <input type="number" class="form-control-input" id="valorConta">
+                                <label class="label-control" for="valorConta">Valor da conta de luz (R$)</label>
                             </div>
-                            <!--<div class="form-group checkbox">
-                                <input type="checkbox" id="terms" value="Agreed-to-Terms" required>I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
-                            </div>-->
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Enviar</button>
-                            </div>
-                        </form>
-                        <!-- end of sign up form -->
 
+                            <div id="errors-box"></div>
+
+                            <div class="form-group">
+                                <button id="submitBtn" type="submit" class="form-control-submit-button" disabled>Enviar</button>
+                            </div>
+
+                            <div 
+                              class="g-recaptcha" 
+                              data-expired-callback="switchCanSubmitStatus" 
+                              data-callback="switchCanSubmitStatus" 
+                              data-sitekey="6LcewJgcAAAAAIGT90Khcdwome82JfdrpduEko2k">
+                            </div>
+
+                        </form>
+                                         
+                        <!-- end of sign up form -->
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
