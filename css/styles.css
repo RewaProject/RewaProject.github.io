@@ -550,17 +550,13 @@ input[type='checkbox'] {
 }
 
 .form-control-submit-button:disabled {
-
 	border: 1px solid gray;
-
 	background-color: gray;
 	color: #ffffff;
-
 }
 
 .form-control-submit-button:hover:disabled {
 	border: 1px solid gray;
-
 	background-color: gray;
 	color: #ffffff;
   cursor: auto;
