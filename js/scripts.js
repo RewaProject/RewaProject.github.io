@@ -2,9 +2,8 @@
    Description: Custom JS file
 */
 
-const API_URL = 'http://localhost:3333';
+const API_URL = 'https://rewa-app.co/api';
 
-const leadForm = document.getElementById('leadForm');
 
 const nome = document.getElementById('name');
 const email = document.getElementById('email');
@@ -19,35 +18,35 @@ function switchCanSubmitStatus() {
   submitForm.disabled = !submitForm.disabled;
 };
 
-if (leadForm) {
-  leadForm.addEventListener('submit', async e => {
-    e.preventDefault();
+async function submitLeadForm(event) {
+  event.preventDefault();
 
-    if (!isValidForm()) return;
+  if (!isValidForm()) return;
 
-    try {
-      await fetch(`${API_URL}/leads`,{
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          nome: nome.value,
-          email: email.value,
-          telefone: telefone.value,
-          cnpj: cnpj.value,
-          valorConta: valorConta.value
-        })
-      });
-      cleanLeadForm();
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-      $('body').addClass('stop-scrolling')
-      document.getElementsByClassName("popup")[0].classList.add("active");
-    } catch(err) {
-      console.error(err)
-    }
+  try {
+    await fetch(`${API_URL}/leads`,{
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        nome: nome.value,
+        email: email.value,
+        telefone: telefone.value,
+        cnpj: cnpj.value,
+        valorConta: valorConta.value
+      })
+    });
+    cleanLeadForm();
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
+    $('body').addClass('stop-scrolling');
 
-  });
+    const popupElement = document.getElementsByClassName("popup")[0];
+    console.log(popupElement);
+    popupElement.classList.add("active");
+  } catch(err) {
+    console.error(err.message)
+  }
+
 }
-
 
 function isValidForm() {
   const formErrors = [];
@@ -101,8 +100,6 @@ function showErrors(errors = []) {
   }
 }
 
-
-
 function cleanLeadForm() {
   nome.value = '';
   email.value = '';
@@ -132,14 +129,15 @@ function maskPhone(ref) {
     stringMasked.replace(/(\d{5})(\d)/, '$1-$2');
 };
 
-const dismissPopButton = document.getElementById("dismiss-popup-btn");
 
-if (dismissPopButton) {
-  dismissPopButton.addEventListener("click",function(){
-    document.getElementsByClassName("popup")[0].classList.remove("active");
-    window.location = 'index.html';
-  });
-}
+
+
+
+function dismissButtonFunc() {
+  document.getElementsByClassName("popup")[0].classList.remove("active");
+  window.location = 'index.html';
+} 
+
 
 (function($) {
     "use strict"; 

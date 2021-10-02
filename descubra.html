@@ -50,7 +50,7 @@
         Nós já recebemos seus dados e em breve entraremos em contato.
       </div>
       <div class="dismiss-btn">
-        <button id="dismiss-popup-btn">
+        <button id="dismiss-popup-btn" onclick="dismissButtonFunc()">
           Entendido!
         </button>
       </div>
@@ -125,7 +125,7 @@
                         <p class="mb-4">Preencha os dados abaixo que entraremos em contato!</p>
 
                         <!-- Sign Up Form -->
-                        <form id="leadForm">
+                        <form id="leadForm" onsubmit="submitLeadForm(event)">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="name" onkeyup="cleanSpecialChar(this)" required>
                                 <label class="label-control" for="name">Nome</label>
