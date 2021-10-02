@@ -19,32 +19,34 @@ function switchCanSubmitStatus() {
   submitForm.disabled = !submitForm.disabled;
 };
 
-leadForm.addEventListener('submit', async e => {
-  e.preventDefault();
+if (leadForm) {
+  leadForm.addEventListener('submit', async e => {
+    e.preventDefault();
 
-  if (!isValidForm()) return;
+    if (!isValidForm()) return;
 
-  try {
-    await fetch(`${API_URL}/leads`,{
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        nome: nome.value,
-        email: email.value,
-        telefone: telefone.value,
-        cnpj: cnpj.value,
-        valorConta: valorConta.value
-      })
-    });
-    cleanLeadForm();
-    $('html, body').animate({ scrollTop: 0 }, 'fast');
-    $('body').addClass('stop-scrolling')
-    document.getElementsByClassName("popup")[0].classList.add("active");
-  } catch(err) {
-    console.error(err)
-  }
+    try {
+      await fetch(`${API_URL}/leads`,{
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          nome: nome.value,
+          email: email.value,
+          telefone: telefone.value,
+          cnpj: cnpj.value,
+          valorConta: valorConta.value
+        })
+      });
+      cleanLeadForm();
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+      $('body').addClass('stop-scrolling')
+      document.getElementsByClassName("popup")[0].classList.add("active");
+    } catch(err) {
+      console.error(err)
+    }
 
-});
+  });
+}
 
 
 function isValidForm() {
@@ -130,10 +132,14 @@ function maskPhone(ref) {
     stringMasked.replace(/(\d{5})(\d)/, '$1-$2');
 };
 
-document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
-  document.getElementsByClassName("popup")[0].classList.remove("active");
-  window.location = 'index.html';
-});
+const dismissPopButton = document.getElementById("dismiss-popup-btn");
+
+if (dismissPopButton) {
+  dismissPopButton.addEventListener("click",function(){
+    document.getElementsByClassName("popup")[0].classList.remove("active");
+    window.location = 'index.html';
+  });
+}
 
 (function($) {
     "use strict"; 
